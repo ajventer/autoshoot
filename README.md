@@ -20,7 +20,7 @@ The MasterTemplate folder is a convenient replica of a standard astrophotography
 When you start your session, just copy the Master_Template directory a new path describing the shoot. Let's say I was doing a shoot on Sirius. I will be doing 45s exposures, and I'm taking the darks to match.
 
 ```
-$ cp /path/to/Master_Template ~/Pictures/Astro/Sirius-$(date +%Y-%m-%d)
+$ cp -r /path/to/Master_Template ~/Pictures/Astro/Sirius-$(date +%Y-%m-%d)
 $ cd Picutres/Astro/Sirus-$(date +%Y-%m-%d)
 $ cd darks
 $ cat HOWTO
@@ -31,3 +31,5 @@ Take a 20-50 shots
 
 $ /path/to/auto_shoot.sh 30 45 dark-sirius
 ```
+
+By the end of the evning the folder Sirius-<todays date> is ready to be used with your favorite stacking software. Wether that is DeepSkyStacker under wine or Siril.
