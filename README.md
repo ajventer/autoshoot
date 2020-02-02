@@ -17,7 +17,7 @@ This script uses gphoto2 to actually talk to the camera. Most distros come with 
 
 The MasterTemplate folder is a convenient replica of a standard astrophotography directory, with the four most common types of frame folders allready added. Each folder (except lights - because those are the obvious ones you always takes) also contains a brief HOWTO that explains how to take that kind of frame and how many are suggested. This is handy when in the field shooting, especially if you are still learning, as a quick reminder of the process.
 
-When you start your session, just copy the Master_Template directory a new path describing the shoot. Let's say you I was doing a shoot on Sirius.
+When you start your session, just copy the Master_Template directory a new path describing the shoot. Let's say I was doing a shoot on Sirius. I will be doing 45s exposures, and I'm taking the darks to match.
 
 ```
 $ cp /path/to/Master_Template ~/Pictures/Astro/Sirius-$(date +%Y-%m-%d)
