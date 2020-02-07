@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash 
 COUNT=$1
 BULB=$2
 NAME=$3
