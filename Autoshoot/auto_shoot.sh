@@ -9,5 +9,5 @@ if test $# -ne 3 ; then
 fi
 ps aux | fgrep "gphoto" | fgrep -q 'fgrep' | awk '{print $2}' | xargs kill -9 
 
-gphoto2 -B $BULB --capture-image-and-download --no-keep  --frames $COUNT --interval 5 --filename $NAME-%n.%C
+gphoto2 -B $BULB --capture-image-and-download --no-keep  --frames $COUNT --interval 10 --filename $NAME-%n.%C
 
