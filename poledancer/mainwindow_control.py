@@ -10,7 +10,7 @@ class PoleDancerMainWindow(Ui_MainWindow):
     '''
     def setupUi(self, MainWindow):
         Ui_MainWindow.setupUi(self, MainWindow)
-        self.starcanvas = starCanvas(MainWindow)
+        self.starcanvas = starCanvas(MainWindow, self)
         MainWindow.setCentralWidget(self.starcanvas)
         MainWindow.showMaximized()
         self.statusbar.showMessage('Connect your camera to start')
