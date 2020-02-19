@@ -17,33 +17,7 @@
    <iconset>
     <normaloff>Resources/icon_small.png</normaloff>Resources/icon_small.png</iconset>
   </property>
-  <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="ImageView">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>1121</width>
-      <height>851</height>
-     </rect>
-    </property>
-    <property name="mouseTracking">
-     <bool>true</bool>
-    </property>
-    <property name="toolTip">
-     <string>Click on a star to select it.  Click again to change selection.</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>Resources/icon.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-  </widget>
+  <widget class="QWidget" name="centralwidget"/>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
