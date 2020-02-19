@@ -1,4 +1,3 @@
-import rawpy
 import imageio
 import gphoto2 as gp
 import logging
