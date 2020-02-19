@@ -1,6 +1,6 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-from poleseeker_mainwindow import Ui_MainWindow
+from poledancer_mainwindow import Ui_MainWindow
 
 class MainwindowEvents(object):
     def __init__(self, app, mainwindow):

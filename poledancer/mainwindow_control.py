@@ -1,7 +1,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
-from poleseeker_mainwindow import Ui_MainWindow
+from poledancer_mainwindow import Ui_MainWindow
 
-class PoleSeekerMainWindow(Ui_MainWindow):
+class PoleDancerMainWindow(Ui_MainWindow):
     '''
     All UI code not done via QT-Designer,
     thus allowing it to not be overridden when the QTDesigner code 

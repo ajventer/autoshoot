@@ -1,5 +1,5 @@
 #!/bin/bash
 DESTDIR=/usr
 
-cd ${DESTDIR}/share/poleseeker
+cd ${DESTDIR}/share/poledancer
 ./poleseeker.py
