@@ -6,6 +6,7 @@ import sys
 import io
 
 from PIL import Image
+from PIL.ImageQt import ImageQt
 
 
 class Camera(object):
@@ -24,6 +25,7 @@ class Camera(object):
         # get configuration tree
         self.config = gp.check_result(gp.gp_camera_get_config(self.camera))
 
+
     def getImage(self):
         cfg = self.camera.get_config()
         capturetarget_cfg = cfg.get_child_by_name('capturetarget')
@@ -33,13 +35,11 @@ class Camera(object):
         camera_file = gp.check_result(gp.gp_camera_capture_preview(self.camera))
         file_data = gp.check_result(gp.gp_file_get_data_and_size(camera_file))
         tempPath='/tmp/align.cr2'
-        #open(tempPath,'w').write(buffer(file_data))
         data = memoryview(file_data)
-        print(type(data), len(data))
-        print(data[:10].tolist())
         image = Image.open(io.BytesIO(file_data))
-        TiffPath = '/tmp/align.tiff'
-        image.save(TiffPath)
-        return TiffPath
+        qimage = ImageQt(image)
+        # TiffPath = '/tmp/align.tiff'
+        # image.save(TiffPath)
+        return qimage
 
 
