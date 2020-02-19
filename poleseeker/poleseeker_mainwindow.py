@@ -10,19 +10,12 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.showMaximized()
+        MainWindow.resize(1115, 875)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
-        self.label1 = QtWidgets.QLabel(self.centralwidget)
-        self.label1.setGeometry(QtCore.QRect(250, 150, 76, 19))
-        self.label1.setObjectName("label1")
-        self.pushButton1 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton1.setGeometry(QtCore.QRect(370, 590, 112, 31))
-        self.pushButton1.setObjectName("pushButton1")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 1115, 25))
@@ -35,6 +28,9 @@ class Ui_MainWindow(object):
         MainWindow.setStatusBar(self.statusbar)
         self.actionQuit = QtWidgets.QAction(MainWindow)
         self.actionQuit.setObjectName("actionQuit")
+        self.actionCamera = QtWidgets.QAction(MainWindow)
+        self.actionCamera.setObjectName("actionCamera")
+        self.menuFile.addAction(self.actionCamera)
         self.menuFile.addAction(self.actionQuit)
         self.menubar.addAction(self.menuFile.menuAction())
 
@@ -44,10 +40,11 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "PoleSeeker"))
-        self.label1.setText(_translate("MainWindow", "Test1"))
-        self.pushButton1.setText(_translate("MainWindow", "Quit"))
         self.menuFile.setTitle(_translate("MainWindow", "File"))
         self.actionQuit.setText(_translate("MainWindow", "Quit"))
+        self.actionQuit.setStatusTip(_translate("MainWindow", "Exit poleseeker"))
+        self.actionCamera.setText(_translate("MainWindow", "Camera"))
+        self.actionCamera.setStatusTip(_translate("MainWindow", "Change camera settings"))
 
 
 if __name__ == "__main__":
